@@ -1,0 +1,752 @@
+[
+  {
+    "question": "3 pumps, working 8 hours a day, can empty a tank in 2 days. How many hours a day must 4 pumps work to empty the tank in 1 day?",
+    "optionA": "9",
+    "optionB": "10",
+    "optionC": "11",
+    "optionD": "12",
+    "answer": 4,
+    "category": "Chain Rule",
+    "explanation": "Pumps (4:3) and Days (1:2) are indirect proportions. 4 * 1 * x = 3 * 2 * 8. x = 12."
+  },
+  {
+    "question": "If the cost of x metres of wire is d rupees, then what is the cost of y metres of wire at the same rate?",
+    "optionA": "Rs. xyd",
+    "optionB": "Rs. (xd)",
+    "optionC": "Rs. (yd)",
+    "optionD": "Rs. ydx/x",
+    "answer": 4,
+    "category": "Chain Rule",
+    "explanation": "Cost of 1 metre = d/x. Cost of y metres = (d/x) * y = yd/x."
+  },
+  {
+    "question": "Running at the same constant rate, 6 identical machines can produce 270 bottles per minute. How many bottles could 10 machines produce in 4 minutes?",
+    "optionA": "648",
+    "optionB": "1800",
+    "optionC": "2700",
+    "optionD": "10800",
+    "answer": 2,
+    "category": "Chain Rule",
+    "explanation": "Machines (6:10) and Time (1:4) are direct proportions. 6 * 1 * x = 10 * 4 * 270. x = 1800."
+  },
+  {
+    "question": "A fort had food for 150 men for 45 days. After 10 days, 25 men left. How many days will the remaining food last?",
+    "optionA": "29 1/5",
+    "optionB": "37 1/4",
+    "optionC": "42",
+    "optionD": "54",
+    "answer": 3,
+    "category": "Chain Rule",
+    "explanation": "Remaining food for 150 men is for 35 days. For 125 men: 125 * x = 150 * 35. x = 42."
+  },
+  {
+    "question": "39 persons can repair a road in 12 days, working 5 hours a day. In how many days will 30 persons, working 6 hours a day, complete it?",
+    "optionA": "10",
+    "optionB": "13",
+    "optionC": "14",
+    "optionD": "15",
+    "answer": 2,
+    "category": "Chain Rule",
+    "explanation": "Persons (30:39) and Hours (6:5) are indirect. 30 * 6 * x = 39 * 5 * 12. x = 13."
+  },
+  {
+    "question": "A man completes 5/8 of a job in 10 days. At this rate, how many more days will it take him to finish the job?",
+    "optionA": "5",
+    "optionB": "6",
+    "optionC": "7",
+    "optionD": "7 1/2",
+    "answer": 2,
+    "category": "Chain Rule",
+    "explanation": "Remaining work is 3/8. Since 5/8 work takes 10 days, 3/8 work will take (10 * 8/5) * 3/8 = 6 days."
+  },
+  {
+    "question": "If a quarter kg of potato costs 60 paise, how many paise will 200 gm cost?",
+    "optionA": "48 paise",
+    "optionB": "54 paise",
+    "optionC": "56 paise",
+    "optionD": "72 paise",
+    "answer": 1,
+    "category": "Chain Rule",
+    "explanation": "250g costs 60 paise. So 200g costs (60/250) * 200 = 48 paise."
+  },
+  {
+    "question": "In a dairy farm, 40 cows eat 40 bags of husk in 40 days. In how many days will one cow eat one bag of husk?",
+    "optionA": "1",
+    "optionB": "1/40",
+    "optionC": "40",
+    "optionD": "80",
+    "answer": 3,
+    "category": "Chain Rule",
+    "explanation": "40 cows : 40 bags : 40 days. 1 cow : 1 bag : x days. Using chain rule: 1*40*x = 40*1*40. x = 40."
+  },
+  {
+    "question": "A wheel that has 6 cogs is meshed with a larger wheel of 14 cogs. When the smaller wheel makes 21 revolutions, how many does the larger wheel make?",
+    "optionA": "4",
+    "optionB": "9",
+    "optionC": "12",
+    "optionD": "49",
+    "answer": 2,
+    "category": "Chain Rule",
+    "explanation": "More cogs = Less revolutions (Indirect proportion). 14 : 6 :: 21 : x. x = (6 * 21) / 14 = 9."
+  },
+  {
+    "question": "If 7 spiders make 7 webs in 7 days, then 1 spider will make 1 web in how many days?",
+    "optionA": "1",
+    "optionB": "7/2",
+    "optionC": "7",
+    "optionD": "49",
+    "answer": 3,
+    "category": "Chain Rule",
+    "explanation": "Spiders and Days are indirectly proportional. Webs and Days are directly proportional. 1*7*x = 7*1*7. x = 7."
+  },
+  {
+    "question": "A flagstaff 17.5 m high casts a shadow of 40.25 m. How high is a building that casts a shadow of 28.75 m?",
+    "optionA": "10 m",
+    "optionB": "12.5 m",
+    "optionC": "17.5 m",
+    "optionD": "21.25 m",
+    "answer": 2,
+    "category": "Chain Rule",
+    "explanation": "Shadow length and Height are directly proportional. (17.5 / 40.25) * 28.75 = 12.5 m."
+  },
+  {
+    "question": "In a camp, there is a meal for 120 men or 200 children. If 150 children have taken the meal, how many men can be catered with the remaining meal?",
+    "optionA": "20",
+    "optionB": "30",
+    "optionC": "40",
+    "optionD": "50",
+    "answer": 2,
+    "category": "Chain Rule",
+    "explanation": "Remaining meal is for 50 children. Since 200 children = 120 men, 50 children = (120/200) * 50 = 30 men."
+  },
+  {
+    "question": "An industrial loom weaves 0.128 metres of cloth every second. How many seconds will it take to weave 25 metres?",
+    "optionA": "178",
+    "optionB": "195",
+    "optionC": "204",
+    "optionD": "488",
+    "answer": 2,
+    "category": "Chain Rule",
+    "explanation": "Time = Total length / rate. 25 / 0.128 = 195.31 seconds. Approx 195."
+  },
+  {
+    "question": "36 men can complete a piece of work in 18 days. In how many days will 27 men complete the same work?",
+    "optionA": "12",
+    "optionB": "18",
+    "optionC": "22",
+    "optionD": "24",
+    "answer": 4,
+    "category": "Chain Rule",
+    "explanation": "Less men = More days (Indirect). 27 : 36 :: 18 : x. x = (36 * 18) / 27 = 24."
+  },
+  {
+    "question": "4 mat-weavers can weave 4 mats in 4 days. At the same rate, how many mats would be woven by 8 mat-weavers in 8 days?",
+    "optionA": "4",
+    "optionB": "8",
+    "optionC": "12",
+    "optionD": "16",
+    "answer": 4,
+    "category": "Chain Rule",
+    "explanation": "Weavers and Days are both directly proportional to Mats. (8/4) * (8/4) * 4 = 16."
+  },
+  {
+    "question": "A can do a work in 15 days and B in 20 days. If they work together for 4 days, then the fraction of the work that is left is:",
+    "optionA": "1/4",
+    "optionB": "1/10",
+    "optionC": "7/15",
+    "optionD": "8/15",
+    "answer": 4,
+    "category": "Time and Work",
+    "explanation": "Combined 1 day work = 1/15 + 1/20 = 7/60. In 4 days, work done = 4 * 7/60 = 7/15. Remaining = 1 - 7/15 = 8/15."
+  },
+  {
+    "question": "A can lay track in 16 days and B in 12 days. With help of C, they did it in 4 days. How long would C take alone?",
+    "optionA": "9 1/5 days",
+    "optionB": "9 2/5 days",
+    "optionC": "9 3/5 days",
+    "optionD": "10 days",
+    "answer": 3,
+    "category": "Time and Work",
+    "explanation": "C's 1 day work = 1/4 - (1/16 + 1/12) = 5/48. Time taken = 48/5 = 9 3/5 days."
+  },
+  {
+    "question": "A, B, C can do work in 20, 30, 60 days. In how many days can A do it if assisted by B and C every third day?",
+    "optionA": "12 days",
+    "optionB": "15 days",
+    "optionC": "16 days",
+    "optionD": "18 days",
+    "answer": 2,
+    "category": "Time and Work",
+    "explanation": "2 days of A = 2/20 = 1/10. 3rd day (A+B+C) = 1/10. Work in 3 days = 1/5. Total time = 3 * 5 = 15 days."
+  },
+  {
+    "question": "A is thrice as good as B and finishes a job in 60 days less than B. Working together, they can do it in:",
+    "optionA": "20 days",
+    "optionB": "22 1/2 days",
+    "optionC": "25 days",
+    "optionD": "30 days",
+    "answer": 2,
+    "category": "Time and Work",
+    "explanation": "Ratio of time = 1:3. Difference is 2 units = 60 days. So A=30, B=90. Together = (30*90)/(30+90) = 22.5 days."
+  },
+  {
+    "question": "A does work in 6 days, B in 8 days. For Rs. 3200 total, they finish in 3 days with C's help. How much is paid to C?",
+    "optionA": "Rs. 375",
+    "optionB": "Rs. 400",
+    "optionC": "Rs. 600",
+    "optionD": "Rs. 800",
+    "answer": 2,
+    "category": "Time and Work",
+    "explanation": "Work ratio A:B:C = 1/6 : 1/8 : 1/24 = 4:3:1. C's share = (1/8) * 3200 = Rs. 400."
+  },
+  {
+  "question": "If 6 men and 8 boys do a work in 10 days, and 26 men and 48 boys do it in 2 days, how long will 15 men and 20 boys take?",
+  "optionA": "4 days",
+  "optionB": "5 days",
+  "optionC": "6 days",
+  "optionD": "7 days",
+  "answer": 1,
+  "category": "Time and Work",
+  "explanation": "By solving equations, 1 man's work = 1/100, 1 boy's = 1/200. (15m + 20b) work = 15/100 + 20/200 = 1/4. So, 4 days."
+  },
+  {
+    "question": "A takes 4 hrs, B+C take 3 hrs, A+C take 2 hrs. How long will B alone take?",
+    "optionA": "8 hours",
+    "optionB": "10 hours",
+    "optionC": "12 hours",
+    "optionD": "24 hours",
+    "answer": 3,
+    "category": "Time and Work",
+    "explanation": "A=1/4, C=(1/2-1/4)=1/4. B=(1/3-1/4)=1/12. So, 12 hours."
+  },
+  {
+    "question": "A takes same time as B+C. If A+B take 10 days and C alone takes 50 days, how long for B alone?",
+    "optionA": "15 days",
+    "optionB": "20 days",
+    "optionC": "25 days",
+    "optionD": "30 days",
+    "answer": 3,
+    "category": "Time and Work",
+    "explanation": "A+B+C = 1/10 + 1/50 = 3/25. Since A=B+C, 2A=3/25, A=3/50. B = 1/10 - 3/50 = 2/50 = 1/25. So, 25 days."
+  },
+  {
+    "question": "A does 80% work in 20 days, then B joins and they finish the rest in 3 days. How long for B alone?",
+    "optionA": "23 days",
+    "optionB": "37 days",
+    "optionC": "37 1/2 days",
+    "optionD": "40 days",
+    "answer": 3,
+    "category": "Time and Work",
+    "explanation": "A finishes in 25 days. A+B finish in 15 days. B's work = 1/15 - 1/25 = 2/75. Time = 75/2 = 37.5 days."
+  },
+  {
+    "question": "P, Q, R print books in 8, 10, 12 hrs. All start at 9 AM; P stops at 11 AM. When is the work finished?",
+    "optionA": "11:30 A.M.",
+    "optionB": "12 noon",
+    "optionC": "12:30 P.M.",
+    "optionD": "1:00 P.M.",
+    "answer": 4,
+    "category": "Time and Work",
+    "explanation": "In 2 hrs, P+Q+R do 37/60. Remaining 23/60 done by Q+R (rate 11/60) in ~2 hrs. Total time: 11 AM + 2 hrs = 1 PM."
+  },
+  {
+    "question": "A finishes work in 18 days, B in 15. B works for 10 days and leaves. How many days for A to finish?",
+    "optionA": "5",
+    "optionB": "5 1/2",
+    "optionC": "6",
+    "optionD": "8",
+    "answer": 3,
+    "category": "Time and Work",
+    "explanation": "B does 10/15 = 2/3. Remaining 1/3 done by A in 18 * 1/3 = 6 days."
+  },
+  {
+    "question": "4 men & 6 women take 8 days; 3 men & 7 women take 10 days. How many days for 10 women?",
+    "optionA": "35",
+    "optionB": "40",
+    "optionC": "45",
+    "optionD": "50",
+    "answer": 2,
+    "category": "Time and Work",
+    "explanation": "Solving equations gives 1 woman's rate = 1/400. 10 women = 10/400 = 1/40. So, 40 days."
+  },
+  {
+    "question": "A and B take 30 days. After working 20 days, B leaves. A finishes the rest in 20 more days. How long for A alone?",
+    "optionA": "40",
+    "optionB": "50",
+    "optionC": "54",
+    "optionD": "60",
+    "answer": 4,
+    "category": "Time and Work",
+    "explanation": "In 20 days, A+B do 2/3. Remaining 1/3 done by A in 20 days. Whole work by A = 20 * 3 = 60 days."
+  },
+  {
+    "question": "P takes 12 days (8h/day), Q takes 8 days (10h/day). Together, working 8h/day, how many days?",
+    "optionA": "5 5/11",
+    "optionB": "5 6/11",
+    "optionC": "6 5/11",
+    "optionD": "6 6/11",
+    "answer": 1,
+    "category": "Time and Work",
+    "explanation": "P=96 hrs, Q=80 hrs. Combined rate = 11/480 per hr. Total hrs = 480/11. Days (8h/day) = 60/11 = 5 5/11."
+  },
+  {
+    "question": "10 women take 7 days, 10 children take 14 days. How many days for 5 women and 10 children?",
+    "optionA": "3",
+    "optionB": "5",
+    "optionC": "7",
+    "optionD": "None",
+    "answer": 3,
+    "category": "Time and Work",
+    "explanation": "5 women rate = 5/70, 10 children rate = 10/140. Total = 1/14 + 1/14 = 1/7. So, 7 days."
+  },
+  {
+    "question": "A boat travels at 13 km/hr in still water. If the stream speed is 4 km/hr, find the time taken to go 68 km downstream.",
+    "optionA": "2 hours",
+    "optionB": "3 hours",
+    "optionC": "4 hours",
+    "optionD": "5 hours",
+    "answer": 3,
+    "category": "Boats and Streams",
+    "explanation": "Speed downstream = 13 + 4 = 17 km/hr. Time = Distance / Speed = 68 / 17 = 4 hours."
+  },
+  {
+    "question": "A man's speed with the current is 15 km/hr and the current speed is 2.5 km/hr. What is his speed against the current?",
+    "optionA": "8.5 km/hr",
+    "optionB": "9 km/hr",
+    "optionC": "10 km/hr",
+    "optionD": "12.5 km/hr",
+    "answer": 3,
+    "category": "Boats and Streams",
+    "explanation": "Speed in still water = 15 - 2.5 = 12.5 km/hr. Speed against current = 12.5 - 2.5 = 10 km/hr."
+  },
+  {
+    "question": "A boat takes 8h 48m upstream and 4h downstream for the same distance. What is the ratio of boat speed to current speed?",
+    "optionA": "2 : 1",
+    "optionB": "3 : 2",
+    "optionC": "8 : 3",
+    "optionD": "None of these",
+    "answer": 3,
+    "category": "Boats and Streams",
+    "explanation": "Let distance be D. Speed Up (u) = D/8.8, Speed Down (v) = D/4. Ratio = (v+u)/(v-u) = 8 : 3."
+  },
+  {
+    "question": "A boat (15 km/hr in still water) goes 30 km downstream and back in 4.5 hours. What is the speed of the stream?",
+    "optionA": "4 km/hr",
+    "optionB": "5 km/hr",
+    "optionC": "6 km/hr",
+    "optionD": "10 km/hr",
+    "answer": 2,
+    "category": "Boats and Streams",
+    "explanation": "30/(15+x) + 30/(15-x) = 4.5. Solving for x gives 5 km/hr. Video: https://youtu.be/lMFnNB3YQOo"
+  },
+  {
+    "question": "A boat goes 11 km/hr along the stream and 5 km/hr against it. What is the boat's speed in still water?",
+    "optionA": "3 km/hr",
+    "optionB": "5 km/hr",
+    "optionC": "8 km/hr",
+    "optionD": "9 km/hr",
+    "answer": 3,
+    "category": "Boats and Streams",
+    "explanation": "Speed in still water = 1/2(Downstream + Upstream) = 1/2(11 + 5) = 8 km/hr."
+  },
+  {
+    "question": "A boat covers 16 km downstream in 2h and upstream in 4h. What is the boat's speed in still water?",
+    "optionA": "4 km/hr",
+    "optionB": "6 km/hr",
+    "optionC": "8 km/hr",
+    "optionD": "Data inadequate",
+    "answer": 2,
+    "category": "Boats and Streams",
+    "explanation": "Downstream = 8 km/hr, Upstream = 4 km/hr. Still water = (8+4)/2 = 6 km/hr. Video: https://youtu.be/3D8uAfzz3l0"
+  },
+  {
+    "question": "Boat speed is 15 km/hr and current is 3 km/hr. How far does it travel downstream in 12 minutes?",
+    "optionA": "1.2 km",
+    "optionB": "1.8 km",
+    "optionC": "2.4 km",
+    "optionD": "3.6 km",
+    "answer": 4,
+    "category": "Boats and Streams",
+    "explanation": "Downstream speed = 18 km/hr. Distance in 12 min = 18 * (12/60) = 3.6 km. Video: https://youtu.be/IDOwWUeOldQ"
+  },
+  {
+    "question": "A boat (10 mph in still water) takes 90 mins less downstream than upstream for 36 miles. What is the stream speed?",
+    "optionA": "2 mph",
+    "optionB": "2.5 mph",
+    "optionC": "3 mph",
+    "optionD": "4 mph",
+    "answer": 1,
+    "category": "Boats and Streams",
+    "explanation": "36/(10-x) - 36/(10+x) = 1.5. Solving the quadratic equation gives x = 2 mph."
+  },
+  {
+    "question": "A man rows at 5 kmph in still water. If current is 1 kmph and he takes 1 hr to go and return, how far is the place?",
+    "optionA": "2.4 km",
+    "optionB": "2.5 km",
+    "optionC": "3 km",
+    "optionD": "3.6 km",
+    "answer": 1,
+    "category": "Boats and Streams",
+    "explanation": "Down = 6, Up = 4. x/6 + x/4 = 1. 5x = 12, so x = 2.4 km."
+  },
+  {
+    "question": "A boat goes downstream in 1h and returns in 1.5h. If the stream is 3 kmph, what is the boat's speed in still water?",
+    "optionA": "12 kmph",
+    "optionB": "13 kmph",
+    "optionC": "14 kmph",
+    "optionD": "15 kmph",
+    "answer": 4,
+    "category": "Boats and Streams",
+    "explanation": "(x+3)*1 = (x-3)*1.5. Solving for x gives 15 kmph."
+  },
+  {
+    "question": "A boatman goes 2 km against current in 1h and 1 km with current in 10 mins. How long for 5 km in stationary water?",
+    "optionA": "40 minutes",
+    "optionB": "1 hour",
+    "optionC": "1 hr 15 min",
+    "optionD": "1 hr 30 min",
+    "answer": 3,
+    "category": "Boats and Streams",
+    "explanation": "Down = 6 km/hr, Up = 2 km/hr. Still water = 4 km/hr. Time for 5km = 5/4 hrs = 1h 15m."
+  },
+  {
+    "question": "A man rows 0.75 km upstream in 11.25 mins and downstream in 7.5 mins. What is his speed in still water?",
+    "optionA": "2 km/hr",
+    "optionB": "3 km/hr",
+    "optionC": "4 km/hr",
+    "optionD": "5 km/hr",
+    "answer": 4,
+    "category": "Boats and Streams",
+    "explanation": "Up = 4 km/hr, Down = 6 km/hr. Still water = (4+6)/2 = 5 km/hr."
+  },
+  {
+    "question": "Boat speed is 9 kmph and stream is 1.5 kmph. Total time to go 105 km and return is:",
+    "optionA": "16 hours",
+    "optionB": "18 hours",
+    "optionC": "20 hours",
+    "optionD": "24 hours",
+    "answer": 4,
+    "category": "Boats and Streams",
+    "explanation": "Down = 10.5, Up = 7.5. Time = 105/10.5 + 105/7.5 = 10 + 14 = 24 hours."
+  },
+  {
+    "question": "A man takes twice as long to row upstream as downstream. What is the ratio of boat speed to stream speed?",
+    "optionA": "2 : 1",
+    "optionB": "3 : 1",
+    "optionC": "3 : 2",
+    "optionD": "4 : 3",
+    "answer": 2,
+    "category": "Boats and Streams",
+    "explanation": "Ratio = (T_up + T_down) / (T_up - T_down) = (2+1)/(2-1) = 3 : 1."
+  },
+  {
+    "question": "A man rows 48 km and back in 14h. He rows 4 km with stream in same time as 3 km against it. Rate of stream is:",
+    "optionA": "1 km/hr",
+    "optionB": "1.5 km/hr",
+    "optionC": "2 km/hr",
+    "optionD": "2.5 km/hr",
+    "answer": 1,
+    "category": "Boats and Streams",
+    "explanation": "Ratio of speeds Down:Up = 4:3. 48/4x + 48/3x = 14 gives x=2. Speeds are 8 and 6. Stream = (8-6)/2 = 1 km/hr."
+  },
+  {
+    "question": "A train running at the speed of 60 km/hr crosses a pole in 9 seconds. What is the length of the train?",
+    "optionA": "120 metres",
+    "optionB": "180 metres",
+    "optionC": "324 metres",
+    "optionD": "150 metres",
+    "answer": 4,
+    "category": "Problems on Trains",
+    "explanation": "Speed = 60 * (5/18) = 50/3 m/sec. Length = Speed * Time = (50/3) * 9 = 150 metres."
+  },
+  {
+    "question": "A train 125 m long passes a man, running at 5 km/hr in the same direction as the train, in 10 seconds. The speed of the train is:",
+    "optionA": "45 km/hr",
+    "optionB": "50 km/hr",
+    "optionC": "54 km/hr",
+    "optionD": "55 km/hr",
+    "answer": 2,
+    "category": "Problems on Trains",
+    "explanation": "Relative speed = 125/10 = 12.5 m/sec = 45 km/hr. Train speed = 45 + 5 = 50 km/hr."
+  },
+  {
+    "question": "A 130m long train travelling at 45 km/hr crosses a bridge in 30 seconds. What is the length of the bridge?",
+    "optionA": "200 m",
+    "optionB": "225 m",
+    "optionC": "245 m",
+    "optionD": "250 m",
+    "answer": 3,
+    "category": "Problems on Trains",
+    "explanation": "Speed = 45 * (5/18) = 12.5 m/sec. Total distance = 12.5 * 30 = 375m. Bridge = 375 - 130 = 245m. Video: https://youtu.be/M_d8WufJWKc"
+  },
+  {
+    "question": "Two trains cross a man on a platform in 27s and 17s respectively, and cross each other in 23s. What is the ratio of their speeds?",
+    "optionA": "1 : 3",
+    "optionB": "3 : 2",
+    "optionC": "3 : 4",
+    "optionD": "None of these",
+    "answer": 2,
+    "category": "Problems on Trains",
+    "explanation": "Let speeds be x and y. (27x + 17y)/(x + y) = 23. Solving gives 4x = 6y, or x/y = 3/2."
+  },
+  {
+    "question": "A train passes a platform in 36s and a man on it in 20s. If the train speed is 54 km/hr, what is the platform length?",
+    "optionA": "120 m",
+    "optionB": "240 m",
+    "optionC": "300 m",
+    "optionD": "None of these",
+    "answer": 2,
+    "category": "Problems on Trains",
+    "explanation": "Speed = 15 m/sec. Train length = 15 * 20 = 300m. Total distance = 15 * 36 = 540m. Platform = 540 - 300 = 240m."
+  },
+  {
+    "question": "A train 240 m long passes a pole in 24 seconds. How long will it take to pass a platform 650 m long?",
+    "optionA": "65 sec",
+    "optionB": "89 sec",
+    "optionC": "100 sec",
+    "optionD": "150 sec",
+    "answer": 2,
+    "category": "Problems on Trains",
+    "explanation": "Speed = 240/24 = 10 m/sec. Required time = (240 + 650) / 10 = 89 sec."
+  },
+  {
+    "question": "Two trains of equal length cross each other in 36s while moving in the same direction at 46 km/hr and 36 km/hr. Find each train's length.",
+    "optionA": "50 m",
+    "optionB": "72 m",
+    "optionC": "80 m",
+    "optionD": "82 m",
+    "answer": 1,
+    "category": "Problems on Trains",
+    "explanation": "Relative speed = 10 km/hr = 25/9 m/sec. Distance (2x) = (25/9) * 36 = 100m. x = 50m."
+  },
+  {
+    "question": "A 360m long train running at 45 km/hr will pass a 140m long bridge in how much time?",
+    "optionA": "40 sec",
+    "optionB": "42 sec",
+    "optionC": "45 sec",
+    "optionD": "48 sec",
+    "answer": 1,
+    "category": "Problems on Trains",
+    "explanation": "Speed = 12.5 m/sec. Total distance = 360 + 140 = 500m. Time = 500 / 12.5 = 40 sec."
+  },
+  {
+    "question": "Two trains (1.10 km and 0.9 km long) move in opposite directions at 60 km/hr and 90 km/hr. Time to cross is:",
+    "optionA": "36 sec",
+    "optionB": "45 sec",
+    "optionC": "48 sec",
+    "optionD": "49 sec",
+    "answer": 3,
+    "category": "Problems on Trains",
+    "explanation": "Relative speed = 150 km/hr = 125/3 m/sec. Distance = 2000m. Time = 2000 / (125/3) = 48 sec."
+  },
+  {
+    "question": "A 120m train (45 kmph) is 240m behind a jogger (9 kmph) in the same direction. How soon will the train pass him?",
+    "optionA": "3.6 sec",
+    "optionB": "18 sec",
+    "optionC": "36 sec",
+    "optionD": "72 sec",
+    "answer": 3,
+    "category": "Problems on Trains",
+    "explanation": "Relative speed = 36 kmph = 10 m/sec. Distance = 120 + 240 = 360m. Time = 360 / 10 = 36 sec."
+  },
+  {
+    "question": "A 270m train (120 kmph) crosses another train moving in the opposite direction (80 kmph) in 9s. Find the other train's length.",
+    "optionA": "230 m",
+    "optionB": "240 m",
+    "optionC": "260 m",
+    "optionD": "320 m",
+    "answer": 1,
+    "category": "Problems on Trains",
+    "explanation": "Relative speed = 200 kmph = 500/9 m/sec. Total length = (500/9) * 9 = 500m. Other train = 500 - 270 = 230m."
+  },
+  {
+    "question": "A goods train (72 kmph) crosses a 250m long platform in 26s. What is the length of the train?",
+    "optionA": "230 m",
+    "optionB": "240 m",
+    "optionC": "260 m",
+    "optionD": "270 m",
+    "answer": 4,
+    "category": "Problems on Trains",
+    "explanation": "Speed = 20 m/sec. Total distance = 20 * 26 = 520m. Train length = 520 - 250 = 270m."
+  },
+  {
+    "question": "Two 100m trains cross in 8s in opposite directions. If one is twice as fast as the other, find the faster train's speed.",
+    "optionA": "30 km/hr",
+    "optionB": "45 km/hr",
+    "optionC": "60 km/hr",
+    "optionD": "75 km/hr",
+    "answer": 3,
+    "category": "Problems on Trains",
+    "explanation": "Relative speed = 200/8 = 25 m/sec. 3x = 25, so x = 25/3. Faster = 50/3 m/sec = 60 km/hr."
+  },
+  {
+    "question": "Two trains (140m and 160m) at 60 km/hr and 40 km/hr cross in opposite directions. How many seconds will it take?",
+    "optionA": "9",
+    "optionB": "9.6",
+    "optionC": "10",
+    "optionD": "10.8",
+    "answer": 4,
+    "category": "Problems on Trains",
+    "explanation": "Relative speed = 100 kmph = 250/9 m/sec. Distance = 300m. Time = 300 / (250/9) = 10.8 sec."
+  },
+  {
+    "question": "A 110m train (60 kmph) passes a man running at 6 kmph in the opposite direction in how many seconds?",
+    "optionA": "5 sec",
+    "optionB": "6 sec",
+    "optionC": "7 sec",
+    "optionD": "10 sec",
+    "answer": 2,
+    "category": "Problems on Trains",
+    "explanation": "Relative speed = 66 kmph = 55/3 m/sec. Time = 110 / (55/3) = 6 seconds."
+  },
+  {
+    "question": "Pipes A, B, C fill a tank in 30, 20, and 10 mins. If all are opened together, what is the proportion of solution R (from pipe C) after 3 mins?",
+    "optionA": "5/11",
+    "optionB": "6/11",
+    "optionC": "7/11",
+    "optionD": "8/11",
+    "answer": 2,
+    "category": "Pipes and Cisterns",
+    "explanation": "Combined rate = 1/30 + 1/20 + 1/10 = 11/60. In 3 mins, they fill 33/60. C fills 3/10 (or 18/60). Ratio = 18/33 = 6/11."
+  },
+  {
+    "question": "A and B fill a tank in 5 and 6 hours; C empties it in 12 hours. If all open together, the tank fills in:",
+    "optionA": "1 13/17 hrs",
+    "optionB": "2 8/11 hrs",
+    "optionC": "3 9/17 hrs",
+    "optionD": "4 1/2 hrs",
+    "answer": 3,
+    "category": "Pipes and Cisterns",
+    "explanation": "Net work in 1 hr = 1/5 + 1/6 - 1/12 = 17/60. Time = 60/17 = 3 9/17 hours."
+  },
+  {
+    "question": "A pump fills a tank in 2 hrs. A leak makes it take 2 1/3 hrs. How long for the leak to empty the full tank?",
+    "optionA": "4 1/3 hrs",
+    "optionB": "7 hours",
+    "optionC": "8 hours",
+    "optionD": "14 hours",
+    "answer": 4,
+    "category": "Pipes and Cisterns",
+    "explanation": "Leak rate = 1/2 - 3/7 = 1/14. Leak empties the tank in 14 hours."
+  },
+  {
+    "question": "A and B fill in 37.5 and 45 mins. Both open, but B is turned off so the tank fills in 30 mins. When was B turned off?",
+    "optionA": "5 min",
+    "optionB": "9 min",
+    "optionC": "10 min",
+    "optionD": "15 min",
+    "answer": 2,
+    "category": "Pipes and Cisterns",
+    "explanation": "A works for 30 mins: 30 * (2/75) = 4/5. B must fill 1/5. B's time = (1/5) * 45 = 9 minutes."
+  },
+  {
+    "question": "Pipe B is 5 hrs faster than A and 4 hrs slower than C. A+B fill in the same time as C. Time required by A is:",
+    "optionA": "6 hours",
+    "optionB": "10 hours",
+    "optionC": "15 hours",
+    "optionD": "30 hours",
+    "answer": 3,
+    "category": "Pipes and Cisterns",
+    "explanation": "Let A=x, B=x-5, C=x-9. 1/x + 1/(x-5) = 1/(x-9). Solving gives x=15."
+  },
+  {
+    "question": "Two pipes fill in 20 and 24 mins. A waste pipe empties 3 gal/min. All together fill in 15 mins. Capacity is:",
+    "optionA": "60 gallons",
+    "optionB": "100 gallons",
+    "optionC": "120 gallons",
+    "optionD": "180 gallons",
+    "answer": 3,
+    "category": "Pipes and Cisterns",
+    "explanation": "Waste pipe rate = 1/15 - (1/20 + 1/24) = -1/40. Capacity = 3 * 40 = 120 gallons."
+  },
+  {
+    "question": "A tank fills in 5h by A, B, C. C is twice as fast as B, and B is twice as fast as A. How long for A alone?",
+    "optionA": "20 hours",
+    "optionB": "25 hours",
+    "optionC": "35 hours",
+    "optionD": "50 hours",
+    "answer": 3,
+    "category": "Pipes and Cisterns",
+    "explanation": "Rates: A=1/x, B=2/x, C=4/x. Total = 7/x = 1/5. x = 35 hours."
+  },
+  {
+    "question": "A and B fill a cistern in 4 hours. Separately, B takes 6 hours more than A. Time taken by A alone is:",
+    "optionA": "1 hour",
+    "optionB": "2 hours",
+    "optionC": "6 hours",
+    "optionD": "8 hours",
+    "answer": 3,
+    "category": "Pipes and Cisterns",
+    "explanation": "1/x + 1/(x+6) = 1/4. Solving x^2 - 2x - 24 = 0 gives x = 6."
+  },
+  {
+    "question": "Two pipes A and B can fill a tank in 20 and 30 minutes respectively. If both are used together, how long?",
+    "optionA": "12 min",
+    "optionB": "15 min",
+    "optionC": "25 min",
+    "optionD": "50 min",
+    "answer": 1,
+    "category": "Pipes and Cisterns",
+    "explanation": "Time = (20 * 30) / (20 + 30) = 600 / 50 = 12 minutes."
+  },
+  {
+    "question": "A and B fill in 15 and 20 mins. Both open, but A is turned off after 4 mins. Total time to fill?",
+    "optionA": "10 min 20 sec",
+    "optionB": "11 min 45 sec",
+    "optionC": "12 min 30 sec",
+    "optionD": "14 min 40 sec",
+    "answer": 4,
+    "category": "Pipes and Cisterns",
+    "explanation": "In 4 mins, 4*(1/15 + 1/20) = 7/15 filled. Remaining 8/15 filled by B in (8/15)*20 = 10m 40s. Total = 14m 40s."
+  },
+  {
+    "question": "One pipe fills 3 times as fast as another. Together they take 36 mins. Slower pipe alone takes:",
+    "optionA": "81 min",
+    "optionB": "108 min",
+    "optionC": "144 min",
+    "optionD": "192 min",
+    "answer": 3,
+    "category": "Pipes and Cisterns",
+    "explanation": "Rates are 3/x and 1/x. 4/x = 1/36. x = 144 minutes."
+  },
+  {
+    "question": "A and B fill in 60 and 40 mins. If B is used for half time and A+B for the other half, how long to fill?",
+    "optionA": "15 min",
+    "optionB": "20 min",
+    "optionC": "27.5 min",
+    "optionD": "30 min",
+    "answer": 4,
+    "category": "Pipes and Cisterns",
+    "explanation": "(x/2)*(1/40) + (x/2)*(1/40 + 1/60) = 1. Solving for x gives 30 minutes."
+  },
+  {
+    "question": "A tap fills a tank in 6 hours. After half is full, 3 more similar taps are opened. Total time taken is:",
+    "optionA": "3 hrs 15 min",
+    "optionB": "3 hrs 45 min",
+    "optionC": "4 hrs",
+    "optionD": "4 hrs 15 min",
+    "answer": 2,
+    "category": "Pipes and Cisterns",
+    "explanation": "First half = 3 hrs. Remaining half by 4 taps. Rate = 4*(1/6) = 2/3 per hr. Time = (1/2)/(2/3) = 45 mins. Total = 3h 45m."
+  },
+  {
+    "question": "A, B, C fill in 12, 15, 20 hrs. A is open always; B and C open alternately for 1 hr. The tank fills in:",
+    "optionA": "6 hours",
+    "optionB": "6.6 hours",
+    "optionC": "7 hours",
+    "optionD": "7.5 hours",
+    "answer": 3,
+    "category": "Pipes and Cisterns",
+    "explanation": "Hr 1 (A+B) = 3/20. Hr 2 (A+C) = 2/15. 2-hr work = 17/60. In 6 hrs = 51/60. Rem 9/60 done by A+B in 1 hr. Total = 7 hrs."
+  },
+  {
+    "question": "A, B, C fill in 6 hrs. After 2 hrs, C is closed. A and B fill the rest in 7 hrs. C alone takes:",
+    "optionA": "10 hours",
+    "optionB": "12 hours",
+    "optionC": "14 hours",
+    "optionD": "16 hours",
+    "answer": 3,
+    "category": "Pipes and Cisterns",
+    "explanation": "In 2 hrs, 1/3 filled. A+B fill 2/3 in 7 hrs. A+B rate = 2/21. C rate = 1/6 - 2/21 = 1/14. Time = 14 hours."
+  }
+]

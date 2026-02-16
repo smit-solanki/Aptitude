@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8F9FE"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="24dp">
+
+        <com.google.android.material.progressindicator.LinearProgressIndicator
+            android:id="@+id/quizProgress"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:progress="30"
+            app:indicatorColor="#6200EE"
+            app:trackColor="#E0E0E0"
+            app:trackCornerRadius="8dp"
+            app:trackThickness="8dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/tvQuestionCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="Question 03/10"
+            android:textColor="#757575"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@id/quizProgress"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/questionCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            app:cardCornerRadius="24dp"
+            app:cardElevation="0dp"
+            app:strokeWidth="1dp"
+            app:strokeColor="#E0E0E0"
+            android:background="@color/white"
+            app:layout_constraintTop_toBottomOf="@id/tvQuestionCount">
+
+            <TextView
+                android:id="@+id/tvQuestionText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="32dp"
+                android:text="What is the time complexity of a Binary Search algorithm?"
+                android:textColor="#1A1A1A"
+                android:background="@color/white"
+                android:textSize="20sp"
+                android:fontFamily="sans-serif-medium"
+                android:lineSpacingExtra="4dp"/>
+        </com.google.android.material.card.MaterialCardView>
+
+        <LinearLayout
+            android:id="@+id/optionsContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:orientation="vertical"
+            app:layout_constraintTop_toBottomOf="@id/questionCard">
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/optionCard1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:clickable="true"
+                android:focusable="true"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="2dp"
+                app:rippleColor="#D1C4E9"
+                app:strokeColor="#6200EE"
+                app:strokeWidth="2dp">
+                <TextView
+                    android:id="@+id/tvOption1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="18dp"
+                    android:text="O(log n)"
+                    android:textColor="#6200EE"
+                    android:textStyle="bold"
+                    android:textSize="16sp"/>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/optionCard2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="2dp"
+                app:strokeWidth="0dp">
+
+                <TextView
+                    android:id="@+id/tvOption2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="18dp"
+                    android:text="O(n)"
+                    android:textColor="#424242"
+                    android:textSize="16sp" />
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/optionCard3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:clickable="true"
+                android:focusable="true"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="2dp"
+                app:rippleColor="#D1C4E9"
+                app:strokeColor="#6200EE"
+                app:strokeWidth="2dp">
+                <TextView
+                    android:id="@+id/tvOption3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="18dp"
+                    android:text="O(log n)"
+                    android:textColor="#6200EE"
+                    android:textStyle="bold"
+                    android:textSize="16sp"/>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/optionCard4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="2dp"
+                app:strokeWidth="0dp">
+
+                <TextView
+                    android:id="@+id/tvOption4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="18dp"
+                    android:text="O(n)"
+                    android:textColor="#424242"
+                    android:textSize="16sp" />
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnNext"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="32dp"
+            android:text="Next Question"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            app:cornerRadius="16dp"
+            android:backgroundTint="#6200EE"
+            app:layout_constraintTop_toBottomOf="@id/optionsContainer"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="24dp"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
+
+
+    <!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    android:orientation="vertical"-->
+<!--    android:padding="20dp"-->
+<!--    android:background="#F5F5F5">-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/tvQuestionCount"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Question: 1/10"-->
+<!--        android:textSize="16sp"-->
+<!--        android:layout_marginBottom="10dp"/>-->
+
+<!--    <androidx.cardview.widget.CardView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginBottom="20dp"-->
+<!--        app:cardCornerRadius="12dp"-->
+<!--        xmlns:app="http://schemas.android.com/apk/res-auto">-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/tvQuestionText"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:padding="20dp"-->
+<!--            android:text="Loading Question..."-->
+<!--            android:textSize="20sp"-->
+<!--            android:textStyle="bold"-->
+<!--            android:textColor="#212121"/>-->
+<!--    </androidx.cardview.widget.CardView>-->
+
+<!--    <RadioGroup-->
+<!--        android:id="@+id/rgOptions"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content">-->
+
+<!--        <RadioButton android:id="@+id/rbOption1"-->
+<!--            android:layout_width="match_parent" android:layout_height="wrap_content"-->
+<!--            android:text="Option A" android:padding="12dp" android:textSize="16sp"-->
+<!--            android:background="@android:color/white" android:layout_marginBottom="8dp"/>-->
+
+<!--        <RadioButton android:id="@+id/rbOption2"-->
+<!--            android:layout_width="match_parent" android:layout_height="wrap_content"-->
+<!--            android:text="Option B" android:padding="12dp" android:textSize="16sp"-->
+<!--            android:background="@android:color/white" android:layout_marginBottom="8dp"/>-->
+
+<!--        <RadioButton android:id="@+id/rbOption3"-->
+<!--            android:layout_width="match_parent" android:layout_height="wrap_content"-->
+<!--            android:text="Option C" android:padding="12dp" android:textSize="16sp"-->
+<!--            android:background="@android:color/white" android:layout_marginBottom="8dp"/>-->
+
+<!--        <RadioButton android:id="@+id/rbOption4"-->
+<!--            android:layout_width="match_parent" android:layout_height="wrap_content"-->
+<!--            android:text="Option D" android:padding="12dp" android:textSize="16sp"-->
+<!--            android:background="@android:color/white" android:layout_marginBottom="8dp"/>-->
+<!--    </RadioGroup>-->
+
+<!--    <Button-->
+<!--        android:id="@+id/btnNext"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="NEXT"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:backgroundTint="#2196F3"-->
+<!--        android:textColor="#FFFFFF"/>-->
+
+<!--</LinearLayout>-->
