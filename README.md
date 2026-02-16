@@ -16,11 +16,6 @@ A professional Android application built for students preparing for competitive 
 * **UI Components:** RecyclerView, Material Design, ConstraintLayout
 * **SDKs:** Google Play Services Ads (AdMob)
 
-## 📸 Screenshots
-| Main Menu | Quiz Screen | Result Analysis |
-|---|---|---|
-| ![Main Menu](https://via.placeholder.com/200x400?text=Main+Menu) | ![Quiz](https://via.placeholder.com/200x400?text=Quiz+UI) | ![Result](https://via.placeholder.com/200x400?text=Result+Review) |
-
 ## 📺 YouTube Channel
 This project is part of the **SSAptiHub** educational series. Check out the channel for full tutorials on Aptitude and Android Development:
 [SSAptiHub YouTube Channel](https://www.youtube.com/@SSAptiHub)
