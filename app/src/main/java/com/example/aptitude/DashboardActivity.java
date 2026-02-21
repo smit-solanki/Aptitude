@@ -1,8 +1,10 @@
 package com.example.aptitude;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.LinearLayout;
 
 import androidx.activity.EdgeToEdge;
@@ -32,6 +34,13 @@ public class DashboardActivity extends AppCompatActivity {
         mAdView = findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder().build();
         mAdView.loadAd(adRequest);
+
+        Button youtubeBtn = findViewById(R.id.youtubeButton);
+        youtubeBtn.setOnClickListener(v -> {
+            String channelUrl = "https://www.youtube.com/@SSAptiHub";
+            Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(channelUrl));
+            startActivity(intent);
+        });
 
         btn_formula = findViewById(R.id.btnformula);
         btn_formula.setOnClickListener(new View.OnClickListener() {

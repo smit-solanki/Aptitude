@@ -28,6 +28,16 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <TextView
+        android:id="@+id/subtitleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select a Option to begin"
+        android:textColor="#E0E0E0"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/titleText"
+        app:layout_constraintTop_toBottomOf="@+id/titleText" />
+
     <LinearLayout
         android:id="@+id/devBranding"
         android:layout_width="wrap_content"
@@ -35,7 +45,6 @@
         android:layout_marginEnd="24dp"
         android:orientation="vertical"
         android:gravity="center"
-        app:layout_constraintBottom_toBottomOf="@+id/subtitleText"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@+id/titleText">
 
@@ -54,10 +63,12 @@
     </LinearLayout>
 
     <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:padding="8dp"
+        android:padding="12dp"
         android:weightSum="2"
         app:layout_constraintBottom_toTopOf="@+id/adView"
         app:layout_constraintEnd_toEndOf="parent"
@@ -67,68 +78,78 @@
         <com.google.android.material.card.MaterialCardView
             android:id="@+id/btnFormulaOption"
             android:layout_width="0dp"
-            android:layout_height="100dp"
+            android:layout_height="120dp"
             android:layout_margin="8dp"
             android:layout_weight="1"
-            app:cardCornerRadius="12dp"
-            app:cardElevation="4dp"
-            app:strokeColor="#6200EE"
-            app:strokeWidth="1dp">
+            android:clickable="true"
+            android:focusable="true"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="2dp"
+            app:cardBackgroundColor="#F8F4FF"
+            app:strokeWidth="0dp">
 
             <LinearLayout
                 android:id="@+id/btnformula"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="#F3E5F5"
                 android:gravity="center"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:padding="12dp">
 
                 <ImageView
-                    android:layout_width="32dp"
-                    android:layout_height="32dp"
-                    android:src="@drawable/ic_menu_book"
-                    app:tint="#6200EE" />
+                    android:layout_width="44dp"
+                    android:layout_height="44dp"
+                    android:src="@drawable/formula_icon"
+                    app:tint="#6750A4" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
+                    android:layout_marginTop="10dp"
                     android:text="Formula"
-                    android:textColor="#6200EE"
-                    android:textStyle="bold" />
+                    android:letterSpacing="0.05"
+                    android:textColor="#6750A4"
+                    android:textSize="16sp"
+                    android:fontFamily="sans-serif-medium" />
             </LinearLayout>
         </com.google.android.material.card.MaterialCardView>
 
         <com.google.android.material.card.MaterialCardView
             android:id="@+id/btnQuizOption"
             android:layout_width="0dp"
-            android:layout_height="100dp"
+            android:layout_height="120dp"
             android:layout_margin="8dp"
             android:layout_weight="1"
-            app:cardBackgroundColor="#6200EE"
-            app:cardCornerRadius="12dp"
-            app:cardElevation="4dp">
+            android:clickable="true"
+            android:focusable="true"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="6dp"
+            app:cardBackgroundColor="#6750A4"
+            app:strokeWidth="0dp">
 
             <LinearLayout
                 android:id="@+id/btnquiz"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:gravity="center"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:padding="12dp">
 
                 <ImageView
-                    android:layout_width="32dp"
-                    android:layout_height="32dp"
-                    android:src="@drawable/ic_assignment"
+                    android:layout_width="44dp"
+                    android:layout_height="44dp"
+                    android:src="@drawable/start_quiz_icon"
                     app:tint="#FFFFFF" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
+                    android:layout_marginTop="10dp"
                     android:text="Start Quiz"
+                    android:letterSpacing="0.05"
                     android:textColor="#FFFFFF"
-                    android:textStyle="bold" />
+                    android:textSize="16sp"
+                    android:fontFamily="sans-serif-medium" />
             </LinearLayout>
         </com.google.android.material.card.MaterialCardView>
 

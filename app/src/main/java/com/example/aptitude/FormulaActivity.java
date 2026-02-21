@@ -1,65 +1,65 @@
 package com.example.aptitude;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
+import android.widget.Button;
 import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
+import com.google.android.gms.ads.MobileAds;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class FormulaActivity extends AppCompatActivity {
 
-    private TextView tvTitle, tvContent;
+    private RecyclerView recyclerView;
+    private AdView mAdView;
+    private List<Topic> topicList;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_formula);
 
-        // Setup Toolbar
-        Toolbar toolbar = findViewById(R.id.toolbarLearning);
-        setSupportActionBar(toolbar);
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        getSupportActionBar().setTitle("Study Concept");
+        // 1. Initialize AdMob SDK
+        MobileAds.initialize(this, initializationStatus -> {});
 
-        tvTitle = findViewById(R.id.tvTopicTitle);
-        tvContent = findViewById(R.id.tvFormulaContent);
+        // 2. Load the Banner Ad
+        mAdView = findViewById(R.id.adView);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        mAdView.loadAd(adRequest);
 
-        // Get the topic name passed from MainActivity
-        String topic = getIntent().getStringExtra("TOPIC_NAME");
-        if (topic == null) topic = "General Aptitude";
+        recyclerView = findViewById(R.id.recyclerViewTopics);
+        recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
-        tvTitle.setText(topic);
-        loadFormula(topic);
-    }
+        Button youtubeBtn = findViewById(R.id.youtubeButton);
+        youtubeBtn.setOnClickListener(v -> {
+            String channelUrl = "https://www.youtube.com/@SSAptiHub";
+            Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(channelUrl));
+            startActivity(intent);
+        });
 
-    private void loadFormula(String topic) {
-        String data = "";
+        // Your Topic List
+        topicList = new ArrayList<>();
+        topicList.add(new Topic("Chain Rule"));
+        topicList.add(new Topic("Time and Work"));
+        topicList.add(new Topic("Boats and Streams"));
+        topicList.add(new Topic("Problems on Trains"));
+        topicList.add(new Topic("Pipes and Cisterns"));
 
-        if (topic.equals("Chain Rule")) {
-            data = "• M1 * D1 * H1 / W1 = M2 * D2 * H2 / W2\n\n" +
-                    "• Direct Proportion: More Articles = More Cost\n" +
-                    "• Indirect Proportion: More Men = Less Days";
-        }
-        else if (topic.equals("Time and Work")) {
-            data = "• Work Done = Time * Rate\n\n" +
-                    "• If A can do work in n days, 1 day work = 1/n\n" +
-                    "• Total Work = LCM of individual days";
-        }
-        else if (topic.equals("Problems on Trains")) {
-            data = "• Speed = Distance / Time\n\n" +
-                    "• km/hr to m/s: Multiply by 5/18\n" +
-                    "• m/s to km/hr: Multiply by 18/5\n" +
-                    "• Relative Speed (Opposite): S1 + S2";
-        }
-        else {
-            data = "Visit SSAptiHub for more details on " + topic;
-        }
+        TopicAdapter adapter = new TopicAdapter(topicList, topic -> {
+            Intent intent = new Intent(FormulaActivity.this, FormulaDescriptionActivity.class);
+            intent.putExtra("TOPIC_NAME", topic.getName());
+            startActivity(intent);
+        });
+        recyclerView.setAdapter(adapter);
 
-        tvContent.setText(data);
-    }
-
-    @Override
-    public boolean onSupportNavigateUp() {
-        finish();
-        return true;
     }
 }

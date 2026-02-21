@@ -20,23 +20,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
-        android:layout_marginTop="48dp"
-        android:text="Aptitude Mastery"
+        android:layout_marginTop="38dp"
+        android:text="Aptitude Mastery\n( Quiz topic wise )"
+        android:gravity="center"
         android:textColor="#FFFFFF"
         android:textSize="28sp"
         android:fontFamily="sans-serif-black"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/subtitleText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Select a topic to begin"
-        android:textColor="#E0E0E0"
-        android:textSize="14sp"
-        app:layout_constraintStart_toStartOf="@+id/titleText"
-        app:layout_constraintTop_toBottomOf="@+id/titleText" />
 
     <LinearLayout
         android:id="@+id/devBranding"

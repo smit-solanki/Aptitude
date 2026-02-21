@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Aptitude">
         <activity
+            android:name=".FormulaDescriptionActivity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="false" />
         <activity

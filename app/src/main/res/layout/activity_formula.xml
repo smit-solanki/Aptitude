@@ -7,77 +7,84 @@
     android:background="#F4F7FC"
     tools:context=".FormulaActivity">
 
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbarLearning"
+    <View
+        android:id="@+id/headerBackground"
         android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize"
-        android:background="#6200EE"
-        app:titleTextColor="#FFFFFF"
+        android:layout_height="180dp"
+        android:background="@drawable/header_gradient"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <androidx.core.widget.NestedScrollView
+    <TextView
+        android:id="@+id/titleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="48dp"
+        android:text="Aptitude Mastery\n( Formula topic wise )"
+        android:gravity="center"
+        android:textColor="#FFFFFF"
+        android:textSize="28sp"
+        android:fontFamily="sans-serif-black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/devBranding"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/titleText">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/logo"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="By Smit H Solanki"
+            android:textColor="#FFFFFF"
+            android:textSize="10sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewTopics"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        app:layout_constraintTop_toBottomOf="@id/toolbarLearning"
-        app:layout_constraintBottom_toBottomOf="parent">
+        android:clipToPadding="false"
+        android:padding="12dp"
+        app:layout_constraintBottom_toTopOf="@+id/adView"
+        app:layout_constraintTop_toBottomOf="@+id/headerBackground" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:padding="20dp">
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/youtubeButton"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Watch Tutorials on YouTube"
+        android:textColor="#FF0000"
+        app:icon="@android:drawable/ic_menu_slideshow"
+        app:iconTint="#FF0000"
+        app:layout_constraintBottom_toBottomOf="@+id/headerBackground"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
-            <TextView
-                android:id="@+id/tvTopicTitle"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Topic Name"
-                android:textColor="#333333"
-                android:textSize="26sp"
-                android:fontFamily="sans-serif-black" />
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:adSize="BANNER"
+        app:adUnitId="ca-app-pub-6920326538569130/1677588600"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
 
-            <View
-                android:layout_width="50dp"
-                android:layout_height="4dp"
-                android:layout_marginTop="8dp"
-                android:background="#6200EE" />
-
-            <com.google.android.material.card.MaterialCardView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="24dp"
-                app:cardCornerRadius="16dp"
-                app:cardElevation="4dp">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:padding="20dp">
-
-                    <TextView
-                        android:id="@+id/tvFormulaContent"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="Formulas loading..."
-                        android:textColor="#444444"
-                        android:textSize="18sp"
-                        android:lineSpacingExtra="8dp" />
-
-                </LinearLayout>
-            </com.google.android.material.card.MaterialCardView>
-
-            <com.google.android.material.button.MaterialButton
-                android:id="@+id/btnPracticeNow"
-                android:layout_width="match_parent"
-                android:layout_height="60dp"
-                android:layout_marginTop="32dp"
-                android:text="PRACTICE THIS TOPIC"
-                android:textSize="16sp"
-                app:cornerRadius="12dp"
-                android:backgroundTint="#6200EE"/>
-
-        </LinearLayout>
-    </androidx.core.widget.NestedScrollView>
+    </com.google.android.gms.ads.AdView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
