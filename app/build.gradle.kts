@@ -46,4 +46,5 @@ dependencies {
     implementation("androidx.cardview:cardview:1.0.0")
     implementation("androidx.recyclerview:recyclerview:1.3.0")
     implementation("com.google.android.gms:play-services-ads:23.0.0")
+    implementation("androidx.core:core-splashscreen:1.0.1")
 }
