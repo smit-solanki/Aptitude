@@ -16,9 +16,10 @@ import androidx.core.view.WindowInsetsCompat;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
 import com.google.android.gms.ads.MobileAds;
+import com.google.android.material.card.MaterialCardView;
 
 public class DashboardActivity extends AppCompatActivity {
-    LinearLayout btn_formula , btn_quiz;
+    MaterialCardView btn_formula , btn_quiz;
     private AdView mAdView;
 
     @Override
@@ -42,7 +43,7 @@ public class DashboardActivity extends AppCompatActivity {
             startActivity(intent);
         });
 
-        btn_formula = findViewById(R.id.btnformula);
+        btn_formula = findViewById(R.id.btnFormulaOption);
         btn_formula.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -50,7 +51,7 @@ public class DashboardActivity extends AppCompatActivity {
                 startActivity(i);
             }
         });
-        btn_quiz = findViewById(R.id.btnquiz);
+        btn_quiz = findViewById(R.id.btnQuizOption);
         btn_quiz.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
