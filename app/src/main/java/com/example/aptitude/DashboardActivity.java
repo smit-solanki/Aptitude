@@ -36,7 +36,7 @@ public class DashboardActivity extends AppCompatActivity {
         AdRequest adRequest = new AdRequest.Builder().build();
         mAdView.loadAd(adRequest);
 
-        Button youtubeBtn = findViewById(R.id.youtubeButton);
+        MaterialCardView youtubeBtn = findViewById(R.id.youtubeButton);
         youtubeBtn.setOnClickListener(v -> {
             String channelUrl = "https://www.youtube.com/@SSAptiHub";
             Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(channelUrl));
