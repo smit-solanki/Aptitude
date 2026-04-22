@@ -1,12 +1,11 @@
 plugins {
     alias(libs.plugins.android.application)
+    id("org.jetbrains.kotlin.android") version "1.9.22" apply false
 }
 
 android {
     namespace = "com.example.aptitude"
-    compileSdk {
-        version = release(36)
-    }
+    compileSdk = 36
 
     defaultConfig {
         applicationId = "com.example.aptitude"
@@ -20,11 +19,19 @@ android {
 
     buildTypes {
         release {
-            isMinifyEnabled = false
+            isMinifyEnabled = true
+            isShrinkResources = true
             proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
             )
+        }
+    }
+
+    packaging {
+        resources {
+            excludes += "/META-INF/{AL2.0,LGPL2.1}"
+            excludes += "META-INF/*.kotlin_module"
         }
     }
     compileOptions {
@@ -34,20 +41,42 @@ android {
 }
 
 dependencies {
-    implementation(libs.appcompat)
-    implementation(libs.material)
-    implementation(libs.activity)
-    implementation(libs.constraintlayout)
-    testImplementation(libs.junit)
-    androidTestImplementation(libs.ext.junit)
-    androidTestImplementation(libs.espresso.core)
-    implementation("androidx.appcompat:appcompat:1.6.1")
-    implementation("com.google.android.material:material:1.9.0")
+    // Core Android & UI
+    implementation(libs.appcompat)           // Managed by libs.versions.toml
+    implementation(libs.material)            // Latest Material Design components
+    implementation(libs.activity)            // For ComponentActivity support
+    implementation(libs.constraintlayout)    // For responsive layouts
+
+    // Additional UI Components
     implementation("androidx.cardview:cardview:1.0.0")
     implementation("androidx.recyclerview:recyclerview:1.3.0")
-    implementation("com.google.android.gms:play-services-ads:23.0.0")
     implementation("androidx.core:core-splashscreen:1.0.1")
-    implementation("com.google.android.material:material:1.11.0")
-    implementation("androidx.constraintlayout:constraintlayout:2.1.4")
-    implementation("com.google.android.gms:play-services-ads:22.6.0")
+
+    // Google Play Services (Ads)
+    // Always use the latest version (23.0.0) and remove the older (22.6.0)
+    implementation("com.google.android.gms:play-services-ads:23.0.0")
+
+    // Unit Testing
+    testImplementation(libs.junit)
+
+    // Instrumented Testing
+    androidTestImplementation(libs.ext.junit)
+    androidTestImplementation(libs.espresso.core)
+
+//    implementation(libs.appcompat)
+//    implementation(libs.material)
+//    implementation(libs.activity)
+//    implementation(libs.constraintlayout)
+//    testImplementation(libs.junit)
+//    androidTestImplementation(libs.ext.junit)
+//    androidTestImplementation(libs.espresso.core)
+//    implementation("androidx.appcompat:appcompat:1.6.1")
+//    implementation("com.google.android.material:material:1.9.0")
+//    implementation("androidx.cardview:cardview:1.0.0")
+//    implementation("androidx.recyclerview:recyclerview:1.3.0")
+//    implementation("com.google.android.gms:play-services-ads:23.0.0")
+//    implementation("androidx.core:core-splashscreen:1.0.1")
+//    implementation("com.google.android.material:material:1.11.0")
+//    implementation("androidx.constraintlayout:constraintlayout:2.1.4")
+//    implementation("com.google.android.gms:play-services-ads:22.6.0")
 }
