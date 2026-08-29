@@ -4,7 +4,7 @@
     "type": "APK",
     "kind": "Directory"
   },
-  "applicationId": "com.example.aptitude",
+  "applicationId": "com.smit.frenzyaptitude",
   "variantName": "release",
   "elements": [
     {

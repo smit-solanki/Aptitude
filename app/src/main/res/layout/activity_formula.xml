@@ -61,19 +61,6 @@
         app:layout_constraintBottom_toTopOf="@+id/adView"
         app:layout_constraintTop_toBottomOf="@+id/headerBackground" />
 
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/youtubeButton"
-        style="@style/Widget.MaterialComponents.Button.TextButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Watch Tutorials on YouTube"
-        android:textColor="#FF0000"
-        app:icon="@android:drawable/ic_menu_slideshow"
-        app:iconTint="#FF0000"
-        app:layout_constraintBottom_toBottomOf="@+id/headerBackground"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
     <com.google.android.gms.ads.AdView
         android:id="@+id/adView"
         android:layout_width="match_parent"

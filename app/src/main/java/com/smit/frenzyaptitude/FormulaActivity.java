@@ -1,4 +1,4 @@
-package com.example.aptitude;
+package com.smit.frenzyaptitude;
 
 import android.content.Intent;
 import android.net.Uri;
@@ -16,16 +16,16 @@ import com.google.android.gms.ads.MobileAds;
 import java.util.ArrayList;
 import java.util.List;
 
-public class MainActivity extends AppCompatActivity {
+public class FormulaActivity extends AppCompatActivity {
 
     private RecyclerView recyclerView;
-    private List<Topic> topicList;
     private AdView mAdView;
+    private List<Topic> topicList;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_formula);
 
         // 1. Initialize AdMob SDK
         MobileAds.initialize(this, initializationStatus -> {});
@@ -38,16 +38,8 @@ public class MainActivity extends AppCompatActivity {
         recyclerView = findViewById(R.id.recyclerViewTopics);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
-        Button youtubeBtn = findViewById(R.id.youtubeButton);
-        youtubeBtn.setOnClickListener(v -> {
-            String channelUrl = "https://www.youtube.com/@SSAptiHub";
-            Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(channelUrl));
-            startActivity(intent);
-        });
-
         // Your Topic List
         topicList = new ArrayList<>();
-        topicList.add(new Topic("Mixed Quiz (All Topic)"));
         topicList.add(new Topic("Chain Rule"));
         topicList.add(new Topic("Time and Work"));
         topicList.add(new Topic("Boats and Streams"));
@@ -55,10 +47,11 @@ public class MainActivity extends AppCompatActivity {
         topicList.add(new Topic("Pipes and Cisterns"));
 
         TopicAdapter adapter = new TopicAdapter(topicList, topic -> {
-            Intent intent = new Intent(MainActivity.this, QuizActivity.class);
+            Intent intent = new Intent(FormulaActivity.this, FormulaDescriptionActivity.class);
             intent.putExtra("TOPIC_NAME", topic.getName());
             startActivity(intent);
         });
         recyclerView.setAdapter(adapter);
+
     }
 }

@@ -1,4 +1,4 @@
-package com.example.aptitude;
+package com.smit.frenzyaptitude;
 
 import android.graphics.Color;
 import android.view.LayoutInflater;

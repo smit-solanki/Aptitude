@@ -1,4 +1,4 @@
-package com.example.aptitude;
+package com.smit.frenzyaptitude;
 
 import org.junit.Test;
 

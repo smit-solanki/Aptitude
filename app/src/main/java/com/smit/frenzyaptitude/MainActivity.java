@@ -1,12 +1,11 @@
-package com.example.aptitude;
+package com.smit.frenzyaptitude;
 
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.widget.Button;
-import android.widget.TextView;
+
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.Toolbar;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -17,16 +16,16 @@ import com.google.android.gms.ads.MobileAds;
 import java.util.ArrayList;
 import java.util.List;
 
-public class FormulaActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity {
 
     private RecyclerView recyclerView;
-    private AdView mAdView;
     private List<Topic> topicList;
+    private AdView mAdView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_formula);
+        setContentView(R.layout.activity_main);
 
         // 1. Initialize AdMob SDK
         MobileAds.initialize(this, initializationStatus -> {});
@@ -48,6 +47,7 @@ public class FormulaActivity extends AppCompatActivity {
 
         // Your Topic List
         topicList = new ArrayList<>();
+        topicList.add(new Topic("Mixed Quiz (All Topic)"));
         topicList.add(new Topic("Chain Rule"));
         topicList.add(new Topic("Time and Work"));
         topicList.add(new Topic("Boats and Streams"));
@@ -55,11 +55,10 @@ public class FormulaActivity extends AppCompatActivity {
         topicList.add(new Topic("Pipes and Cisterns"));
 
         TopicAdapter adapter = new TopicAdapter(topicList, topic -> {
-            Intent intent = new Intent(FormulaActivity.this, FormulaDescriptionActivity.class);
+            Intent intent = new Intent(MainActivity.this, QuizActivity.class);
             intent.putExtra("TOPIC_NAME", topic.getName());
             startActivity(intent);
         });
         recyclerView.setAdapter(adapter);
-
     }
 }

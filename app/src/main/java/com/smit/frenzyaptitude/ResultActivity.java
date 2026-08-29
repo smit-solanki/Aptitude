@@ -1,4 +1,4 @@
-package com.example.aptitude;
+package com.smit.frenzyaptitude;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -30,7 +30,7 @@ public class ResultActivity extends AppCompatActivity {
         setContentView(R.layout.activity_result);
 
         MobileAds.initialize(this, initializationStatus -> {});
-        loadInterstitialAd();
+        //loadInterstitialAd();
         // 1. Get Data from Intent
         int score = getIntent().getIntExtra("FINAL_SCORE", 0);
         int total = getIntent().getIntExtra("TOTAL_QUESTIONS", 0);
@@ -70,23 +70,23 @@ public class ResultActivity extends AppCompatActivity {
         });
     }
 
-    private void loadInterstitialAd() {
-        AdRequest adRequest = new AdRequest.Builder().build();
-
-        InterstitialAd.load(this, "ca-app-pub-6920326538569130/6887545073", adRequest,
-                new InterstitialAdLoadCallback() {
-                    @Override
-                    public void onAdLoaded(@NonNull InterstitialAd interstitialAd) {
-                        mInterstitialAd = interstitialAd;
-
-                        // 3. SHOW THE AD immediately once it loads
-                        mInterstitialAd.show(ResultActivity.this);
-                    }
-
-                    @Override
-                    public void onAdFailedToLoad(@NonNull LoadAdError loadAdError) {
-                        mInterstitialAd = null;
-                    }
-                });
-    }
+//    private void loadInterstitialAd() {
+//        AdRequest adRequest = new AdRequest.Builder().build();
+//
+//        InterstitialAd.load(this, "ca-app-pub-6920326538569130/6887545073", adRequest,
+//                new InterstitialAdLoadCallback() {
+//                    @Override
+//                    public void onAdLoaded(@NonNull InterstitialAd interstitialAd) {
+//                        mInterstitialAd = interstitialAd;
+//
+//                        // 3. SHOW THE AD immediately once it loads
+//                        mInterstitialAd.show(ResultActivity.this);
+//                    }
+//
+//                    @Override
+//                    public void onAdFailedToLoad(@NonNull LoadAdError loadAdError) {
+//                        mInterstitialAd = null;
+//                    }
+//                });
+//    }
 }
